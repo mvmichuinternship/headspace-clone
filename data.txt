@@ -1,0 +1,12 @@
+type-pod/music/video
+heading - title
+subheading - category + duration
+body - content
+img - url
+audio/podcast/video - url
+tags - sleep, work, calm, mind, walking
+
+
+
+filter based on tags in each music
+headings, subheadings
