@@ -33,11 +33,9 @@ function Card({
         </div>
       )}
       {cardType === "explore" && (
-        <div className="w-full md:w-[50%] flex justify-between bg-stone-50 rounded-lg  h-[112px] ">
+        <div className={cn("w-full flex justify-between bg-stone-50 rounded-lg  h-[112px] ", className)}>
           <div className=" flex flex-col justify-center items-start gap-y-2  py-7 px-5">
-            <span className="font-extrabold text-stone-800 text-xl">
-              {headingText}
-            </span>
+          <Heading className="font-bold text-stone-800 text-2xl text-center  " isIcon={isHIcon} icon={hicon} text={headingText}/>
             <span className="text-md">{subHeadingText}</span>
           </div>
           <Avatar
@@ -49,14 +47,14 @@ function Card({
       )}
 
       {cardType === "horizontal" && (
-        <div className="w-full md:w-[50%] flex justify-between gap-x-4 items-center bg-white h-[112px] ">
+        <div className="w-full  flex justify-between gap-x-4 items-center bg-white h-[112px] ">
           <div className="flex justify-start items-center gap-x-4 h-full">
           <Avatar
             imgAlt={imgAlt}
             imgSrc={imgSrc}
-            className={cn("rounded-md w-36 h-full", avatarClassName)}
+            className={`rounded-md w-36 h-full`}
           />
-          <div className=" flex flex-col items-start gap-y-2">
+          <div className=" flex flex-col items-start text-start gap-y-2">
             <Heading className="font-bold text-stone-800 text-md " isIcon={isHIcon} icon={hicon} text={headingText}/>
               
             <Subheading className="text-xs" isIcon={isSIcon} icon={sicon} text={subHeadingText}/>

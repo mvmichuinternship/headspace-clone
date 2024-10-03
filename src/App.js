@@ -5,19 +5,25 @@ import Homepage from './components/Homepage';
 import Bluebar from './components/Bluebar';
 import Card from './components/basic-components/Card';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import AudioFeed from './screens/AudioFeed';
 import AudioPage from './screens/AudioPage';
 import HomeLayout from './screens/HomeLayout';
+import BottomBar from './components/BottomBar';
+import AudioMeditate from './screens/AudioMeditate';
+import AudioFocus from './screens/AudioFocus';
+import TopBar from './components/TopBar';
 
 function App() {
   return (
     <div className="App h-screen w-[100%] ">
       <BrowserRouter>
+      <TopBar/>
       <Routes>
       <Route path="/" element={<HomeLayout />} />
-      <Route path="/audios" element={<AudioFeed />} />
       <Route path="/audios/:id" element={<AudioPage />} />
+      <Route path="/meditate" element={<AudioMeditate />} />
+      <Route path="/focus" element={<AudioFocus />} />
       </Routes>
+      <BottomBar/>
       </BrowserRouter>
      
       {/* <div className='w-full h-full flex justify-center items-center'>

@@ -34,7 +34,7 @@ function Navbar() {
       <div className="flex w-[50%] justify-end">
         <div className="md:flex md:flex-row w-auto md:justify-around items-center md:gap-x-6 ">
           <p className="text-md hover:font-bold hidden md:block">Help</p>
-          <a href={"/audios"} className="text-md hover:font-bold cursor-pointer hidden md:block">My Headspace</a>
+          <a href={"/meditate"} className="text-md hover:font-bold cursor-pointer hidden md:block">My Headspace</a>
           <IconButton
             className={
               "rounded-full md:w-fit w-full md:px-5 px-2 py-4 bg-blue-600 text-white font-bold"

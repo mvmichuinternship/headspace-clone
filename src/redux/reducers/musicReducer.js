@@ -1,16 +1,20 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { music } from '../../data/musicData';
 
 export const musicSlice = createSlice({
     name:"audios",
-    initialState:[],
+    initialState: {music:music, musicById:{}},
     reducers:{
-        addMusic: (state, action)=>{
-            const audio = action.payload;
-            state.push(audio)
+        getMusicById: (state, action)=>{
+            const audio = state.music.filter(music=> music.id===action.payload);
+            // state.push(audio)
+            return{
+                ...state, musicById:audio
+            }
         }
     }
 })
 
-export const {addMusic} = musicSlice.actions;
+export const {getMusicById} = musicSlice.actions;
 
 export default musicSlice.reducer;
