@@ -1,7 +1,7 @@
 export const music = [
     {
       id: 1,
-      type: "podcast",
+      type: "meditate",
       heading: "Feeling Overwhelmed SOS",
       subheading: "Meditation . 3-4 min",
       body: "Give yourself a little space when you’re feeling overwhelmed.",
@@ -21,7 +21,7 @@ export const music = [
     },
     {
       id: 3,
-      type: "podcast",
+      type: "meditate",
       heading: "Compassion During Campaign Season",
       subheading: "Meditation . 6 min",
       body: "During times of heightened political discourse, mindfulness helps us embrace diverse perspectives as best we can. Rosie leads a session to cultivate compassion and empathy, guided by the gentle rhythm of the breath.",
@@ -71,7 +71,7 @@ export const music = [
     },
     {
       id: 8,
-      type: "podcast",
+      type: "meditate",
       heading: "Slumberland: Candy Town",
       subheading: "Sleepcast . 15 min",
       body: "Within the world of Slumberland, come discover a place where everything is made out of candy — and sweet surprises are waiting for you at every corner. Narrated by Amelia",

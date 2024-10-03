@@ -5,13 +5,14 @@ function Heading(
     {isIcon,
     text,
     icon,
+    iconSize,
     className}
 ){
 return(
     <div className={cn("flex gap-x-2",className)}>
         {
             isIcon && (
-                <img src={icon} alt="" className="w-9 h-8 text-center self-center"/>
+                <img src={icon} alt="" className={cn("w-9 h-8 text-center self-center", iconSize)}/>
             )
         }
        <span>{text}</span>

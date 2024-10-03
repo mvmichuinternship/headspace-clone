@@ -11,6 +11,7 @@ import BottomBar from './components/BottomBar';
 import AudioMeditate from './screens/AudioMeditate';
 import AudioFocus from './screens/AudioFocus';
 import TopBar from './components/TopBar';
+import AudioFeed from './screens/AudioFeed';
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
       <Route path="/" element={<HomeLayout />} />
       <Route path="/audios/:id" element={<AudioPage />} />
       <Route path="/meditate" element={<AudioMeditate />} />
+      <Route path="/all" element={<AudioFeed />} />
+      <Route path="/focus/id" element={<AudioMeditate />} />
       <Route path="/focus" element={<AudioFocus />} />
       </Routes>
       <BottomBar/>

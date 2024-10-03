@@ -66,18 +66,18 @@ function Card({
       )}
 
 {cardType === "vertical" && (
-        <div className=" w-36 flex flex-col justify-start gap-x-4 items-center bg-white h-[112px] ">
+        <div className=" w-36 flex flex-col justify-start gap-x-4 items-center bg-white h-full ">
           <div className="flex flex-col justify-start items-start gap-x-4 h-full">
           <Avatar
             imgAlt={imgAlt}
             imgSrc={imgSrc}
-            className={cn("rounded-md w-36 h-full", avatarClassName)}
+            className={cn("rounded-md w-36 h-[112px]", avatarClassName)}
           />
           <div className=" flex flex-col items-start text-start gap-y-1">
-            <Heading className="font-bold text-stone-800 text-md " isIcon={isHIcon} icon={hicon} text={headingText}/>
+            <Heading className="font-bold text-stone-800 text-md " iconSize={"w-[20%] h-[20%]"} isIcon={isHIcon} icon={hicon} text={headingText}/>
               
             <Subheading  isIcon={isSIcon} icon={sicon} text={subHeadingText}/>
-            <Subheading className=" font-extrabold" isIcon={isBIcon} icon={bicon} text={bodyText}/>
+            <Subheading className=" font-extrabold text-start" isIcon={isBIcon} icon={bicon} text={bodyText}/>
           </div>
           </div>
           
