@@ -12,6 +12,7 @@ import AudioMeditate from './screens/AudioMeditate';
 import AudioFocus from './screens/AudioFocus';
 import TopBar from './components/TopBar';
 import AudioFeed from './screens/AudioFeed';
+import PlayAudio from './components/PlayAudio';
 
 function App() {
   return (
@@ -20,13 +21,14 @@ function App() {
       <TopBar/>
       <Routes>
       <Route path="/" element={<HomeLayout />} />
-      <Route path="/audios/:id" element={<AudioPage />} />
+      <Route path="/audios/:name" element={<AudioPage />} />
       <Route path="/meditate" element={<AudioMeditate />} />
       <Route path="/all" element={<AudioFeed />} />
       <Route path="/focus/id" element={<AudioMeditate />} />
       <Route path="/focus" element={<AudioFocus />} />
       </Routes>
       <BottomBar/>
+      {/* <PlayAudio/> */}
       </BrowserRouter>
      
       {/* <div className='w-full h-full flex justify-center items-center'>

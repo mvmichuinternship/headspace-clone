@@ -6,7 +6,7 @@ export const musicSlice = createSlice({
     initialState: {music:music, musicById:{}},
     reducers:{
         getMusicById: (state, action)=>{
-            const audio = state.music.filter(music=> music.id===action.payload);
+            const audio = state.music.find(music=> music.id===action.payload);
             // state.push(audio)
             return{
                 ...state, musicById:audio

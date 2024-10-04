@@ -12,7 +12,7 @@ function TopBar() {
   }
   return (
     <div className="p-5  bg-white w-full flex flex-col justify-center gap-y-3">
-<div className="w-full  flex justify-between items-center">
+<div className="w-full  flex justify-evenly items-center">
       <div className="">
         <span className="" onClick={()=>{setIsSearch(!isSearch)}}><IoSearchOutline/></span>
         

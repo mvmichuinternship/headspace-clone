@@ -3,18 +3,21 @@ import Subheading from "../components/basic-components/Subheading";
 import IconButton from "../components/basic-components/IconButton";
 import Card from "../components/basic-components/Card";
 import { useSelector } from "react-redux";
+import { RiLock2Fill } from "react-icons/ri";
+import { useState } from "react";
 
-function AudioFocus(){
-    const musics = useSelector((state) => state.music.music);
+function AudioFocus() {
+  const musics = useSelector((state) => state.music.music);
   const meditations = useSelector((state) => state.meditate.meditate);
+  const [subIcons, setSubIcons] = useState("meditate")
 
   console.log(musics);
-    return(
-        <div className="w-full flex  justify-center  h-auto  gap-y-3 px-10 pb-20 pt-5 overflow-y-auto">
+  return (
+    <div className="w-full flex  justify-center  h-auto  gap-y-3 px-10 pb-20 pt-5 overflow-y-auto">
       <div className="md:w-[50%] w-full flex flex-col justify-center items-center h-full ">
         <Heading
           className={
-            "md:w-full w-full text-3xl  leading-tight self-center font-bold text-stone-600"
+            "md:w-full w-full text-3xl pb-6 leading-tight self-center font-bold text-stone-600"
           }
           text={"Meditate"}
         />
@@ -34,13 +37,16 @@ function AudioFocus(){
               className={
                 "text-4xl leading-tight text-start font-bold text-stone-600"
               }
-              isIcon={false}
-              icon={""}
+              isIcon={true}
+              icon={"lock.png"}
+              avatarClassName={"w-2"}
               text={"Switching Tasks"}
             />
             <Subheading
               text={"Meditation . 3-4 min"}
               className={"text-sm"}
+              isIcon={true}
+              icon={"speaker.png"}
             ></Subheading>
             <IconButton
               className={
@@ -69,6 +75,13 @@ function AudioFocus(){
                 subHeadingText={music.subheading}
                 imgAlt={"alt"}
                 imgSrc={music.img}
+                // isBIcon={true}
+                isHIcon={true}
+                isSIcon={true}
+                sicon={(subIcons ==="meditate" && "speaker.png") || (subIcons==="music" && "") || (subIcons==="video" && "")}
+                // bicon={""}
+                hicon={"lock.png"}
+                onClick={""}
               />
             </div>
           ))}
@@ -173,6 +186,8 @@ function AudioFocus(){
                 className={"w-full bg-yellow-400 rounded-lg"}
                 cardType={"explore"}
                 headingText={"Focus and Insight"}
+                hicon={"lock.png"} 
+                isHIcon={true}
                 subHeadingText={"3-20 min . Meditation"}
                 imgAlt={"alt"}
                 imgSrc={"https://api.prod.headspace.com/content/media-items/81511/download-image?width=224"}
@@ -203,6 +218,6 @@ function AudioFocus(){
         </div>
       </div>
     </div>
-    )
+  );
 }
 export default AudioFocus;
