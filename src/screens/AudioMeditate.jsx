@@ -5,6 +5,7 @@ import Card from "../components/basic-components/Card";
 import { useSelector } from "react-redux";
 import { RiLock2Fill } from "react-icons/ri";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function AudioMeditate() {
   const musics = useSelector((state) => state.music.music);
@@ -180,7 +181,7 @@ function AudioMeditate() {
           }
           text={"Today's Meditation"}
         />
-        <div className="pb-10 w-full">
+        <Link to={"/all"} className="pb-10 w-full">
         <Card
                 avatarClassName={""}
                 className={"w-full bg-yellow-400 rounded-lg"}
@@ -192,7 +193,7 @@ function AudioMeditate() {
                 imgAlt={"alt"}
                 imgSrc={"https://api.prod.headspace.com/content/media-items/81511/download-image?width=224"}
               />
-        </div>
+        </Link >
         
         <Heading
           className={
