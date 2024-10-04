@@ -21,10 +21,10 @@ function AudioFeed() {
         <div className="flex justify-evenly py-4">
           <span className="text-2xl text-stone-600">New and Popular</span>
         </div>
-        <div className="md:w-full w-full gap-y-3 sm:grid sm:content-start md:grid-cols-4 sm:grid-cols-3  flex flex-wrap justify-center items-center gap-x-3 gap-y-3 h-full  ">
+        <div className="md:w-full w-full  sm:grid sm:content-start md:grid-cols-4 sm:grid-cols-3  flex flex-wrap justify-center items-center gap-x-3 gap-y-3 h-full ">
           {musics?.map((music) => (
-            <Link to={`https://headspace-clone.netlify.app/audios/${music.id}`} onClick={()=>{dispatch(getMusicById(music.id))}} className="h-full">
-            <div className="px-3 h-fit" key={music.id}>
+            <Link to={`https://headspace-clone.netlify.app/audios/${music.id}`} onClick={()=>{dispatch(getMusicById(music.id))}} className="sm:h-full h-fit">
+            <div className="px-3 " key={music.id}>
               {() => {setSubIcons(music.type);
               console.log(subIcons)}
               }
@@ -32,7 +32,7 @@ function AudioFeed() {
              
               <Card
                 avatarClassName={""}
-                className={"w-full h-fit"}
+                className={"w-full "}
                 cardType={"vertical"}
                 bodyText={music.body}
                 headingText={music.heading}
