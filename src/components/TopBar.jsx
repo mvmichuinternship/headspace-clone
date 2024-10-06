@@ -75,10 +75,10 @@ function TopBar() {
               ))}
             </div>
           ) : (
-            <div className="w-[50%] self-center grid md:grid-cols-3 sm:grid-cols-2 gap-y-3 py-10 gap-x-3">
+            <div className="w-[50%] self-center grid md:grid-cols-3 sm:grid-cols-2 gap-y-3 py-10 gap-x-3 overflow-y-auto">
               {newData?.map((music) => (
                 <Link
-                  to={`https://headspace-clone.netlify.app/audios/${music.id}`}
+                  to={`https://headspace-clone.vercel.app/audios/${music.id}`}
                   onClick={() => {
                     dispatch(getMusicById(music.id));
                   }}
@@ -94,11 +94,9 @@ function TopBar() {
                       subHeadingText={music.subheading}
                       imgAlt={"alt"}
                       imgSrc={music.img}
-                      // isBIcon={true}
                       isHIcon={true}
                       isSIcon={true}
                       sicon={"speaker.png"}
-                      // bicon={""}
                       hicon={"lock.png"}
                       onClick={() => {}}
                     />

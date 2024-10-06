@@ -23,7 +23,7 @@ function AudioFeed() {
         </div>
         <div className="md:w-full w-full  sm:grid sm:content-start md:grid-cols-4 sm:grid-cols-3  flex flex-wrap justify-center items-center gap-x-3 gap-y-3 h-full ">
           {musics?.map((music) => (
-            <Link to={`https://headspace-clone.netlify.app/audios/${music.id}`} onClick={()=>{dispatch(getMusicById(music.id))}} className="sm:h-full h-fit">
+            <Link to={`https://headspace-clone.vercel.app/audios/${music.id}`} onClick={()=>{dispatch(getMusicById(music.id))}} className="sm:h-full h-fit">
             <div className="px-3 " key={music.id}>
               {() => {setSubIcons(music.type);
               console.log(subIcons)}
