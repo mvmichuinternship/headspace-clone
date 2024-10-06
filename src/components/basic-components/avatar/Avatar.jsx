@@ -4,7 +4,7 @@ import cn from 'clsx'
 function Avatar({imgSrc, imgAlt, className}){
     return(
         <>
-            <img src={imgSrc} alt={imgAlt} className={cn("w-min", className)} />
+            <img src={imgSrc} alt={imgAlt} className={cn("", className)} data-testid="avatar"/>
         </>
     )
 }

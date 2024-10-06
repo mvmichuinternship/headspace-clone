@@ -1,5 +1,5 @@
 import { useState } from "react";
-import IconButton from "./basic-components/IconButton";
+import IconButton from "../basic-components/button/IconButton";
 import { MdMenu } from "react-icons/md";
 import { Link } from "react-router-dom";
 

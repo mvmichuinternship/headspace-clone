@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import Card from "../components/basic-components/Card";
+import Card from "../components/basic-components/card/Card";
 import { Link } from "react-router-dom";
 import { getMusicById } from "../redux/reducers/musicReducer";
 

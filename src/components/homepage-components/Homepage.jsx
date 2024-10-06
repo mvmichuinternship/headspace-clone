@@ -1,7 +1,7 @@
 // import Card from "./basic-components/Card";
-import Card from "./basic-components/Card";
-import IconButton from "./basic-components/IconButton";
-import Subheading from "./basic-components/Subheading";
+import Card from "../basic-components/card/Card";
+import IconButton from "../basic-components/button/IconButton";
+import Subheading from "../basic-components/Subheading";
 
 function Homepage() {
   return (

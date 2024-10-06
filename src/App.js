@@ -1,9 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/Navbar';
-import Homepage from './components/Homepage';
-import Bluebar from './components/Bluebar';
-import Card from './components/basic-components/Card';
+// import Navbar from './components/Navbar';
+// import Homepage from './components/Homepage';
+// import Bluebar from './components/Bluebar';
+// import Card from './components/basic-components/Card';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import AudioPage from './screens/AudioPage';
 import HomeLayout from './screens/HomeLayout';

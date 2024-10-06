@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import Card from "../components/basic-components/Card";
+import Card from "../components/basic-components/card/Card";
 import PlayAudio from "../components/PlayAudio";
 import { useState } from "react";
 

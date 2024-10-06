@@ -4,6 +4,7 @@ import cn from "clsx";
 function IconButton({ isIcon, title, isDropdown, className, icon, onClick, isRightArrow }) {
   return (
     <div
+      data-testid="button"
       className={cn(
         `px-2 py-1 flex gap-x-1 text-center justify-center items-center`,
         className

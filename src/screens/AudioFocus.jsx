@@ -1,7 +1,7 @@
 import Heading from "../components/basic-components/Heading";
 import Subheading from "../components/basic-components/Subheading";
-import IconButton from "../components/basic-components/IconButton";
-import Card from "../components/basic-components/Card";
+import IconButton from "../components/basic-components/button/IconButton";
+import Card from "../components/basic-components/card/Card";
 import { useSelector } from "react-redux";
 import { RiLock2Fill } from "react-icons/ri";
 import { useState } from "react";
