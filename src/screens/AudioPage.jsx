@@ -13,7 +13,7 @@ function AudioPage() {
 
   return (
     <div className="w-[100%] h-screen flex flex-col justify-center items-center gap-y-3">
-      <div className="md:w-[50%] w-full h-full flex flex-col justify-center items-center">
+      <div className="md:w-[50%] w-full h-full flex flex-col px-2 justify-center items-center">
         {musics?.audios?.map((music) => (
           <div className="w-full  h-full">
             <Card
